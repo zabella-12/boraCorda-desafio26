@@ -1,0 +1,150 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --primary-color: #58190A;
+    --secondary-color: #9B6647;
+    --tertiary-color: #FEECE0;
+    --fourth-color: #FFFFFF;
+}
+
+body {
+    background-color: var(--secondary-color);
+}
+
+.banner {
+    padding: 112px 115px 50px 115px;
+    display: flex;
+    background-color: var(--tertiary-color);
+    align-items: center;
+    gap: 56px;
+    justify-content: center;
+
+}
+
+h1 {
+    color: var(--primary-color);
+    font-size: 72px;
+    font-family: Source Serif Pro;
+    margin-bottom: 32px;
+}
+
+.banner p {
+    color: var(--primary-color);
+    justify-items: center;
+    font-size: 38px;
+
+}
+
+.banner p:nth-child(1) {
+    color: var(--secondary-color);
+    font-size: 35px;
+    font-family: Source Serif Pro;
+}
+
+#contador {
+    color: var(--secondary-color);
+    font-size: 40px;
+    font-family: Source Sans Pro;
+}
+
+input[type=number] {
+    border: none;
+    width: 40px;
+    height: 40px;
+    background-color: var(--tertiary-color);
+
+}
+
+input[type=number]::-webkit-inner-spin-button {
+    display: none;
+}
+
+.porcao {
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    box-sizing: border-box;
+}
+
+
+.titulos {
+    color: var(--tertiary-color);
+    align-items: center;
+}
+
+
+.ingredientes {
+    padding: 74px;
+    display: flex;
+    gap: 64px;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.listas {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 32px;
+}
+
+ul,
+ol {
+    color: var(--fourth-color);
+    font-size: 28px;
+    font-family: Source Sans Pro;
+    padding: revert;
+}
+
+h2 {
+    font-size: 38px;
+}
+
+.titulos {
+    display: flex;
+    gap: 11px;
+}
+
+button {
+    border: none;
+    border-radius: 50%;
+    width: 32px;
+    height: 32px;
+    background-color: var(--tertiary-color);
+}
+
+button:hover {
+    cursor: pointer;
+    width: 33px;
+    height: 33px;
+}
+
+button.menos {
+    background-image: url(../assets/menos.svg);
+    background-size: cover;
+    background-position: center;
+}
+
+button.mais {
+    background-image: url(../assets/mais.svg);
+    background-size: cover;
+    background-position: center;
+}
+
+/*----resposividade----*/
+
+@media screen and (max-width: 887px) {
+    .banner,.ingredientes{
+        flex-direction: column;
+        padding: 40px;
+    }
+
+    .banner img{
+        width: 300px;
+    }
+  }
